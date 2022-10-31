@@ -1,0 +1,103 @@
+.ground{
+border-collapse: collapse;
+margin-left: auto;
+margin-right: auto;
+
+}
+table.ground tr{
+    background-color: #38464B ;
+}
+.ground tr,.ground td{
+    width: 2.5em;
+    height: 2.5em;
+    
+}
+.ground td{
+    text-align: center;
+    
+}
+
+table.ground tr:first-child,table.ground tr:last-child{
+    background-color:#000036 ;
+}
+table.ground td:first-child,table.ground td:last-child{
+    background-color: #000036;
+
+}
+td.river{
+    background-color:#384EF7;
+}
+td.bridge{
+    background-color: #9C560D;
+}
+.snake::before{
+    content: "\01F40D";
+}
+.scorpion::before{
+    content: "\01F982";
+}
+.t-rex::before{
+    content: "\01F996";
+}
+.dragon::before{
+    content: "\01F409";
+}
+.hero::before{
+    content: "\01F9B8";
+}
+.gem-stone::before{
+    content: "\01F48E";
+}
+.dagger::before{
+    content: "\01F5E1";
+}
+.shield::before{
+    content: "\01F6E1";
+}
+.crossed-sword::before{
+    content: "\02694";
+}
+.trophy::before{
+    content: "\01F3C6";
+}
+.lava{
+    background-color: #cf1020;
+}
+.extra-life::before{
+    content: "\02665";
+}
+#dagger{
+    background-color: aquamarine;
+}
+#gem-stone{
+    background-color: darkturquoise;
+}
+#shield,#crossed-sword{
+    background-color: lightcyan;
+}
+#trophy{
+    background-color: darkgoldenrod;
+}
+#extra-life{
+    background-color:darkolivegreen;
+}
+body >h1{
+    text-align: center;
+}
+p.author{
+    text-align: center;
+}
+table.ground td.monster{
+    border: solid thin red;
+    background-color:lightslategrey;
+}
+table.ground td.hero{
+    background-color:hotpink;
+}
+table.ground td.wall{
+    background-color:#000036;
+}
+/* entry door*/
+table.ground tr:last-child td:nth-child(8){
+    background-color: lightgrey;
+}

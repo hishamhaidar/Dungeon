@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dungeon Game</title>
+  </head>
+  <body>
+    <h1>Dungeon game</h1>
+    <p class="author">
+      <em>Made by : HISHAM HAIDAR (<mark>FG06XM</mark>)</em>
+    </p>
+
+    <table class="ground">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="lava"></td>
+        <td class="lava"></td>
+        <td class ="lava"></td>
+        <td class="lava"></td>
+        <td class="trophy" id="trophy"></td>
+        <td></td>
+        <td class="dragon monster"></td>
+        <td class="t-rex monster"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="dragon monster"></td>
+        <td></td>
+        <td class="lava"></td>
+        <td class="lava"></td>
+        <td class="lava"></td>
+        <td class="lava"></td>
+        <td class="lava"></td>
+        <td></td>
+        <td class="t-rex monster"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="t-rex monster"></td>
+        <td></td>
+        <td class="wall"></td>
+        <td></td>
+        <td class="scorpion monster"></td>
+        <td></td>
+        <td></td>
+        <td class="snake monster"></td>
+        <td class="lava"></td>
+        <td class="lava"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="wall"></td>
+        <td class="extra-life" id="extra-life"></td>
+        <td class="wall"></td>
+        <td class="wall"></td>
+        <td class="wall"></td>
+        <td></td>
+        <td class="lava"></td>
+        <td class="lava"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="dragon monster"></td>
+        <td></td>
+        <td class="wall"></td>
+        <td class="wall"></td>
+        <td class="wall"></td>
+        <td class="crossed-sword" id="crossed-sword"></td>
+        <td class="wall"></td>
+        <td></td>
+        <td class="t-rex monster"></td>
+        <td class="lava"></td>
+        <td class="dragon monster"></td>
+        <td class="t-rex monster"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="t-rex monster"></td>
+        <td></td>
+        <td></td>
+        <td ></td>
+        <td class="wall"></td>
+        <td class="dragon monster"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="river"></td>
+        <td class="river"></td>
+        <td class="river"></td>
+        <td class="river"></td>
+        <td class="river"></td>
+        <td class="river"></td>
+        <td class="bridge"></td>
+        <td class="river"></td>
+        <td class="river"></td>
+        <td class="river"></td>
+        <td class="river"></td>
+        <td class="river"></td>
+        <td class="river"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="snake monster"></td>
+        <td></td>
+        <td></td>
+        <td class="scorpion monster"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="snake monster"></td>
+        <td></td>
+        <td></td>
+        <td class="scorpion monster"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="shield" id="shield"></td>
+        <td></td>
+        <td class="lava"></td>
+        <td class="lava"></td>
+        <td class="lava"></td>
+        <td class="snake monster"></td>
+        <td class="lava"></td>
+        <td class="lava"></td>
+        <td class="lava"></td>
+        <td class="lava"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="wall"></td>
+        <td class="wall"></td>
+        <td class="wall"></td>
+        <td class="lava"></td>
+        <td class="scorpion monster"></td>
+        <td class="lava"></td>
+        <td class="wall"></td>
+        <td class="wall"></td>
+        <td class="wall"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td class="lava"></td>
+        <td class="snake monster"></td>
+        <td></td>
+        <td></td>
+        <td class="wall"></td>
+        <td class="lava"></td>
+        <td class="gem-stone" id="gem-stone"></td>
+        <td class="lava"></td>
+        <td class="wall"></td>
+        <td></td>
+        <td></td>
+        <td class="scorpion monster"></td>
+        <td class="lava"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="lava"></td>
+        <td class="lava"></td>
+        <td class="scorpion monster"></td>
+        <td></td>
+
+        <td class="wall"></td>
+        <td class="wall"></td>
+        <td class="wall"></td>
+        <td class="wall"></td>
+        <td class="wall"></td>
+        <td></td>
+        <td class="snake monster"></td>
+        <td class="lava"></td>
+        <td class="lava"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="hero"></td>
+        <td></td>
+        <td class="dagger" id="dagger"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
